@@ -37,6 +37,8 @@ h3 {
     /*trazado de la fuente*/
 }
 
+
+
 p {
     color: #6a6a6a;
     font-size: 16px;
@@ -194,9 +196,15 @@ nav .btn-rojo {
     filter: grayscale(0);
 }
 
-#tecnologias .t-box {
-    box-shadow: 0px 0px 10px #d00000;
+#formacion h2 {
+    color: #E20000;
 }
+
+#formacion h4 {
+    color: #e20000;
+    font-size: 14px;
+}
+
 
 /*MODIFICACIONES AREA PROYECTO*/
 #proyectos {
