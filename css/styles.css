@@ -186,12 +186,14 @@ nav .btn-rojo {
     font-size: 14px;
 }
 
-#experiencia .img-fluid {
+#experiencia .img-fluid,
+#formacion .img-fluid {
     opacity: 0.5;
     filter: grayscale(100%);
 }
 
-#experiencia .img-fluid:hover {
+#experiencia .img-fluid:hover,
+#formacion .img-fluid:hover {
     opacity: 1;
     filter: grayscale(0);
 }
@@ -202,7 +204,13 @@ nav .btn-rojo {
 
 #formacion h4 {
     color: #e20000;
+    font-size: 17px;
+}
+
+#formacion h5 {
+    color: #6A6A6A;
     font-size: 14px;
+    ;
 }
 
 
