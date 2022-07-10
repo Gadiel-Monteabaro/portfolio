@@ -39,8 +39,6 @@ h3 {
     /*trazado de la fuente*/
 }
 
-
-
 p {
     color: #6a6a6a;
     font-size: 16px;
@@ -190,33 +188,40 @@ nav .btn-rojo {
 
 #experiencia .img-fluid,
 #formacion .img-fluid,
-#hobbies .img-fluid {
+#cursos .img-fluid {
     opacity: 0.5;
     filter: grayscale(100%);
 }
 
 #experiencia .img-fluid:hover,
 #formacion .img-fluid:hover,
-#hobbies .img-fluid:hover {
+#cursos .img-fluid:hover {
     opacity: 1;
     filter: grayscale(0);
 }
 
-#formacion h2 {
+#formacion h2,
+#cursos h2 {
     color: #E20000;
 }
 
-#formacion h4 {
+#formacion h4,
+#cursos h4 {
     color: #e20000;
     font-size: 17px;
 }
 
-#formacion h5 {
+#formacion h5,
+#cursos h5 {
     color: #6A6A6A;
     font-size: 14px;
     ;
 }
 
+.colum {
+    background: linear-gradient(to left top, rgba(255, 0, 0, 0.699) 0%, rgba(52, 58, 64, 0) 25%, rgba(73, 80, 87, 0) 70%, rgba(108, 117, 125, 0) 100%);
+    
+}
 
 /*MODIFICACIONES AREA PROYECTO*/
 #proyectos {
