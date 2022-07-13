@@ -41,7 +41,7 @@ $pg = "contacto";
 
             <!--Formulario-->
             <div class="col-sm-6 col-12">
-                <form action="" method="post">
+                <form action="" method="POST">
                     <div class="pb-3">
                         <input type="text" name="txtNombre" id="txtNombre" placeholder="Nombre" class="form-control shadow" required>
                     </div>
