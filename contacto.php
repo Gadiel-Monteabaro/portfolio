@@ -1,6 +1,6 @@
 <?php
 $pg = "contacto";
-?>s
+?>
 
 <!DOCTYPE html>
 <html lang="es" class="h-100">
