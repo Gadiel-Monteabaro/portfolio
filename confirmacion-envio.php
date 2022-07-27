@@ -21,7 +21,6 @@ $pg = "contacto";
 </head>
 
 <body id="contacto" class="d-flex flex-column h-100">
-s
     <!--Barra de Navegacion-->
     <header>
         <?php include_once("menu.php"); ?>
