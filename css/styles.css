@@ -1,429 +1,436 @@
 /*IMPORT; nos permite vincular distintas fuentes, proporcionadas por google en este caso*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /*con el root puedo generar varialbes, que puedo utilizar en mi codigo, facilitanto el uso de las propiedades y valores como el color de un elemento*/
 :root {
-
-    --headers-color: #e20000;
-    --btn-color: #E20000;
-    --btn-media-color: rgba(227, 0, 0, 0.5);
-    --links-color: #E20000;
+  --headers-color: #e20000;
+  --btn-color: #e20000;
+  --btn-media-color: rgba(227, 0, 0, 0.5);
+  --links-color: #e20000;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    /*tipo de fuente de google fonts*/
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
+  /*tipo de fuente de google fonts*/
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
 }
 
 /*MODIFICACIONES GENERALES, PARRAFOS, ENCABEZADOS.*/
 h1 {
-    color: var(--headers-color);
-    font-size: 36px;
+  color: var(--headers-color);
+  font-size: 36px;
 }
 
 h2 {
-    font-size: 24px;
-    /*modifica el tipo de letra, de minuscula a mayuscula*/
-    color: white;
+  font-size: 24px;
+  /*modifica el tipo de letra, de minuscula a mayuscula*/
+  color: white;
 }
 
 h3 {
-    font-size: 14px;
-    /*tamaño de la fuente en los encabezados terciarios*/
-    color: #282828;
-    font-weight: 300;
-    /*trazado de la fuente*/
+  font-size: 14px;
+  /*tamaño de la fuente en los encabezados terciarios*/
+  color: #282828;
+  font-weight: 300;
+  /*trazado de la fuente*/
 }
 
 p {
-    color: #6a6a6a;
-    font-size: 16px;
+  color: #6a6a6a;
+  font-size: 16px;
 }
 
 .img-fluid {
-    /*damos propiedades predeterminadas para todas las img y no tener q agrandar el codigo*/
-    height: auto;
-    max-width: 100%;
+  /*damos propiedades predeterminadas para todas las img y no tener q agrandar el codigo*/
+  height: auto;
+  max-width: 100%;
 }
-
 
 /*botones generales*/
 .btn {
-    /*color del texto*/
-    color: #370a6d;
-    /*fondo del boton*/
-    background-color: white;
-    /*propiedad para no dejar bordes en los botones*/
-    border: none;
+  /*color del texto*/
+  color: #370a6d;
+  /*fondo del boton*/
+  background-color: white;
+  /*propiedad para no dejar bordes en los botones*/
+  border: none;
 }
 
 /*botones con fondo rojo*/
 .btn-rojo {
-    background-color: #E20000;
-    color: white;
-    font-weight: 100;
+  background-color: #e20000;
+  color: white;
+  font-weight: 100;
 }
 
 /*propiedad hover, permite modifica propiedades css, al pasar el cursor sobre la caja*/
 .btn:hover {
-    color: white;
-    background-color: #370a6d;
+  color: white;
+  background-color: #370a6d;
 }
-
 
 .link-rojo a {
-    color: var(--links-color);
-    text-decoration: none;
+  color: var(--links-color);
+  text-decoration: none;
 }
-
 
 /*BARRA DE NAVEGACION*/
 nav .active {
-    /*borde activo en la barra de navegacion*/
-    border: 1px solid red;
-    /*borde activo*/
-    border-radius: 20px;
+  /*borde activo en la barra de navegacion*/
+  border: 1px solid red;
+  /*borde activo*/
+  border-radius: 20px;
 }
 
 nav .nav-link {
-    /*color del texto de los links de navegacion*/
-    color: #282828;
+  /*color del texto de los links de navegacion*/
+  color: #282828;
 }
 
 nav .btn-rojo {
-    /*fondo del boton CV*/
-    background-color: #e20000;
-    /*Tamaño de la fuente*/
-    font-weight: 100;
-    /*color del boton CV*/
-    color: white;
-
+  /*fondo del boton CV*/
+  background-color: #e20000;
+  /*Tamaño de la fuente*/
+  font-weight: 100;
+  /*color del boton CV*/
+  color: white;
 }
 
 /*MODIFICACIONES AREA INICIO*/
 #inicio {
-    /*fondo de contacto*/
-    background-image: url(../images/Imagenes/fondo-contacto.png);
-    /*propiedad size para cubrir la pantalla con el fondo*/
-    background-size: cover;
-    /*propiedad para no repetir la imagen varias veces en la pantalla*/
-    background-repeat: no-repeat;
+  /*fondo de contacto*/
+  background-image: url(../images/Imagenes/fondo-contacto.png);
+  /*propiedad size para cubrir la pantalla con el fondo*/
+  background-size: cover;
+  /*propiedad para no repetir la imagen varias veces en la pantalla*/
+  background-repeat: no-repeat;
 }
 
 #inicio .cohete {
-    height: 400px;
+  height: 400px;
 }
 
 #inicio .div-cohete {
-    /*la columna que contiene a la imagen del cohete.*/
-    height: 410px;
+  /*la columna que contiene a la imagen del cohete.*/
+  height: 410px;
 }
 
 #inicio .cohete:hover {
-    /*tamaño del cohete, ocupara como tamaño final el total de la columna contenedora de la img.*/
-    transition: all ease 1.5s;
-    height: 410px;
+  /*tamaño del cohete, ocupara como tamaño final el total de la columna contenedora de la img.*/
+  transition: all ease 1.5s;
+  height: 410px;
 }
 
 #inicio .input-home p {
-    border: 1px solid white;
-    border-radius: 50px;
-    font-size: 17px;
-    font-weight: 600;
-    color: white;
+  border: 1px solid white;
+  border-radius: 50px;
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
 }
 
 /*MODIFICACIONES AREA SOBRE MI*/
 
 .perfil-img {
-    margin: 1em auto;
-    background-color: #fff;
-    border-radius: 50%;
-    display: block;
-    padding: 10px;
+  margin: 1em auto;
+  background-color: #fff;
+  border-radius: 50%;
+  display: block;
+  padding: 10px;
 }
 
 #sobremi .card {
-    height: 182px;
+  height: 182px;
 }
 
 #sobremi footer .fa-github {
-    color: #E20000;
+  color: #e20000;
 }
 
 #sobremi footer .fa-linkedin-in {
-    color: white;
-    background-color: #E20000;
+  color: white;
+  background-color: #e20000;
 }
 
 #sobremi footer a {
-    color: #E20000;
+  color: #e20000;
 }
 
 #experiencia h2 {
-    color: #370A6D;
+  color: #370a6d;
 }
 
 #experiencia h4 {
-    color: #370A6D;
-    font-size: 17px;
+  color: #370a6d;
+  font-size: 17px;
 }
 
 #experiencia h3,
 #formacion h3 {
-    color: #6A6A6A;
-    font-size: 18px;
-    font-weight: 600;
+  color: #6a6a6a;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 #experiencia h5 {
-    color: #6A6A6A;
-    font-size: 14px;
+  color: #6a6a6a;
+  font-size: 14px;
 }
 
 #experiencia .img-fluid,
 #formacion .img-fluid,
 #cursos .img-fluid {
-    opacity: 0.5;
-    filter: grayscale(100%);
+  opacity: 0.5;
+  filter: grayscale(100%);
 }
 
 #experiencia .img-fluid:hover,
 #formacion .img-fluid:hover,
 #cursos .img-fluid:hover {
-    opacity: 1;
-    filter: grayscale(0);
+  opacity: 1;
+  filter: grayscale(0);
 }
 
 #formacion h2,
 #cursos h2 {
-    color: #E20000;
+  color: #e20000;
 }
 
 #formacion h4,
 #cursos h4 {
-    color: #e20000;
-    font-size: 17px;
+  color: #e20000;
+  font-size: 17px;
 }
 
 #formacion h5,
 #cursos h5 {
-    color: #6A6A6A;
-    font-size: 14px;
-    ;
+  color: #6a6a6a;
+  font-size: 14px;
 }
 
 .colum {
-    background: linear-gradient(to left top, #fc8d337c 0%, rgba(52, 58, 64, 0) 25%, rgba(73, 80, 87, 0) 70%, rgba(108, 117, 125, 0) 100%);
-
+  background: linear-gradient(
+    to left top,
+    #fc8d337c 0%,
+    rgba(52, 58, 64, 0) 25%,
+    rgba(73, 80, 87, 0) 70%,
+    rgba(108, 117, 125, 0) 100%
+  );
 }
 
 .estilo:hover {
-    animation-duration: 5s;
-    animation-name: box-shadow;
-    animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-name: box-shadow;
+  animation-iteration-count: infinite;
 }
 
 @keyframes box-shadow {
-    0% {
-        box-shadow: 0px 0px 10px 0px #ffba08;
-    }
+  0% {
+    box-shadow: 0px 0px 10px 0px #ffba08;
+  }
 
-    50% {
-        box-shadow: 0px 0px 15px 5px #ffba08;
-    }
+  50% {
+    box-shadow: 0px 0px 15px 5px #ffba08;
+  }
 
-    100% {
-        box-shadow: 0px 0px 10px 0px #ffba08;
-    }
+  100% {
+    box-shadow: 0px 0px 10px 0px #ffba08;
+  }
 }
 
 #idiomas .card {
-    background-color: #bd1f36;
-    border-radius: 15px;
-    padding: 40px 0;
+  background-color: #bd1f36;
+  border-radius: 15px;
+  padding: 40px 0;
 }
 
 #idiomas .tarjeta {
-    border-radius: 15px;
+  border-radius: 15px;
 }
 
 #idiomas .fas {
-    font-size: 80px;
-    color: white;
+  font-size: 80px;
+  color: white;
 }
 
 #idiomas h2 {
-    font-size: 16px;
-    font-weight: 600px;
-    color: #282828;
+  font-size: 16px;
+  font-weight: 600px;
+  color: #282828;
 }
 
 /*MODIFICACIONES AREA PROYECTO*/
 #proyectos {
-    /*fondo de la seccion de proyectos.*/
-    background-image: url(../images/Imagenes/fondo-proyectos.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+  /*fondo de la seccion de proyectos.*/
+  background-image: url(../images/Imagenes/fondo-proyectos.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #proyectos p {
-    /*tamaño de la fuente solo para los parrafos de la seccion parrafos*/
-    font-size: 14px;
+  /*tamaño de la fuente solo para los parrafos de la seccion parrafos*/
+  font-size: 14px;
 }
 
 #proyectos .card p {
-    /*altura del contenedor del parrafo, de las tres tarjetas*/
-    height: 90px;
+  /*altura del contenedor del parrafo, de las tres tarjetas*/
+  height: 90px;
 }
 
 #proyectos h2 {
-    /*tamaño de la fuente de los encabezados secundarios*/
-    font-size: 16px;
-    /*propiedad para modificar el tipo de letra, en este caso de minuscula a mayusculas*/
-    text-transform: uppercase;
-    /*color del texto*/
-    color: white;
+  /*tamaño de la fuente de los encabezados secundarios*/
+  font-size: 16px;
+  /*propiedad para modificar el tipo de letra, en este caso de minuscula a mayusculas*/
+  text-transform: uppercase;
+  /*color del texto*/
+  color: white;
 }
 
 /*tamaño de las imagenes de las tarjetas, no es recomendable modificar tanto los valores de una imagen original para no originar deformaciones en la imagen*/
 #proyectos img {
-    height: 212px;
+  height: 212px;
 }
 
 /*modificaciones del footer del area de proyectos por un tema de colores con el fondo*/
 #proyectos footer {
-    color: #E20000;
+  color: #e20000;
 }
 
 #proyectos footer a {
-    color: #E20000;
+  color: #e20000;
 }
 
 #proyectos footer .fa-github {
-    color: #E20000;
+  color: #e20000;
 }
 
 #proyectos footer .fa-linkedin-in {
-    color: white;
-    background-color: #E20000;
+  color: white;
+  background-color: #e20000;
 }
 
 .color-gradiente {
-    /*fondo con estilo gradiente, podemos dar un degradado de colores dando un efecto mas atractivo a la pagina, posicionando por porcentajes la concentracion del color*/
-    background: linear-gradient(to right, rgba(184, 37, 20, 1) 0%, rgba(214, 52, 30, 1) 47%, rgba(240, 47, 23, 1) 70%, rgba(240, 47, 23, 1) 100%);
+  /*fondo con estilo gradiente, podemos dar un degradado de colores dando un efecto mas atractivo a la pagina, posicionando por porcentajes la concentracion del color*/
+  background: linear-gradient(
+    to right,
+    rgba(184, 37, 20, 1) 0%,
+    rgba(214, 52, 30, 1) 47%,
+    rgba(240, 47, 23, 1) 70%,
+    rgba(240, 47, 23, 1) 100%
+  );
 }
 
 /*MODIFICACIONES AREA CONTACTO*/
 /*FORMULARIO*/
 #contacto {
-    /*fondo de contacto*/
-    background-image: url(../images/Imagenes/fondo-contacto.png);
-    /*propiedad size para cubrir la pantalla con el fondo*/
-    background-size: cover;
-    /*propiedad para no repetir la imagen varias veces en la pantalla*/
-    background-repeat: no-repeat;
+  /*fondo de contacto*/
+  background-image: url(../images/Imagenes/fondo-contacto.png);
+  /*propiedad size para cubrir la pantalla con el fondo*/
+  background-size: cover;
+  /*propiedad para no repetir la imagen varias veces en la pantalla*/
+  background-repeat: no-repeat;
 }
 
 input,
 textarea,
 .btn {
-    /*boton del formulario*/
-    border-radius: 15px !important;
+  /*boton del formulario*/
+  border-radius: 15px !important;
 }
 
 textarea {
-    /*tamaño en alto del textarea, parte del formulario*/
-    height: 150px;
+  /*tamaño en alto del textarea, parte del formulario*/
+  height: 150px;
 }
 
 /*sombreado de los imputs del formulario*/
 .shadow {
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
-
 
 /*MODIFICAIONES AL FOOTER*/
 .btn-whatsapp {
-    background-color: #370a6d;
-    color: white;
-    width: 60px;
-    /*modificaciones a los bordes izquierdo y top*/
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    font-size: 30px;
-    /*alinea el texto al centro de la caja*/
-    padding: 8px 0 15px 0;
-    text-align: center;
-    /*propiedad que nos permite dejar fijo el boton en la pantalla*/
-    position: fixed;
-    /*propiedades que nos permite posicionar una caja, en determinado lugar deseado*/
-    right: 80px;
-    bottom: 0px;
+  background-color: #370a6d;
+  color: white;
+  width: 60px;
+  /*modificaciones a los bordes izquierdo y top*/
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  font-size: 30px;
+  /*alinea el texto al centro de la caja*/
+  padding: 8px 0 15px 0;
+  text-align: center;
+  /*propiedad que nos permite dejar fijo el boton en la pantalla*/
+  position: fixed;
+  /*propiedades que nos permite posicionar una caja, en determinado lugar deseado*/
+  right: 80px;
+  bottom: 0px;
 }
 
 .btn-whatsapp i {
-    font-size: 30px;
-    color: white;
+  font-size: 30px;
+  color: white;
 }
+
+/*MODIFICACION AREA CONFIRMACION DE ENVIO*/
+
 
 /*estilo del footer*/
 footer {
-    color: white;
+  color: white;
 }
 
 footer a {
-    color: white;
+  color: white;
 }
 
 footer .fa-github {
-    font-size: 30px;
-    color: white;
+  font-size: 30px;
+  color: white;
 }
 
 footer .fa-linkedin-in {
-    background-color: white;
-    border-radius: 80px;
-    text-align: center;
-    padding: 8px 0 0 0;
-    color: #ff4a49;
-    font-size: 20px;
-    margin: 0 8px;
-    height: 32px;
-    border: 0px;
-    width: 32px;
+  background-color: white;
+  border-radius: 80px;
+  text-align: center;
+  padding: 8px 0 0 0;
+  color: #ff4a49;
+  font-size: 20px;
+  margin: 0 8px;
+  height: 32px;
+  border: 0px;
+  width: 32px;
 }
 
 /*MEDIA QUERYS, para modificar las secciones para una mejor apreciacion en dispositivos moviles*/
-@media (max-width:750px) {
-    #contacto {
-        background-image: url(../images/Imagenes/fondo-contacto.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+@media (max-width: 750px) {
+  #contacto {
+    background-image: url(../images/Imagenes/fondo-contacto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-    /*sin estas propiedades no podia mantener la imagen centrada en el contenedor, al aplicarle display flex, pude mover el contenido del contenedor de la imagen de manera sencilla.*/
-    #sobremi .img-fluid,
-    img-container {
-        width: 70%;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-left: 0;
-    }
+  /*sin estas propiedades no podia mantener la imagen centrada en el contenedor, al aplicarle display flex, pude mover el contenido del contenedor de la imagen de manera sencilla.*/
+  #sobremi .img-fluid,
+  img-container {
+    width: 70%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+  }
 
-    /*Si quito esta propiedad las imganes se me van por el borde del contenido cuando pongo la pantalla en dispositivo moviles, con esto no sucede.*/
-    #sobremi #tecnologias .card img {
-        max-width: 40%;
-    }
+  /*Si quito esta propiedad las imganes se me van por el borde del contenido cuando pongo la pantalla en dispositivo moviles, con esto no sucede.*/
+  #sobremi #tecnologias .card img {
+    max-width: 40%;
+  }
 
-    /*//no estaria encontrando para que agregue esto, lo comento por si las dudas lo tengo que utilizar
+  /*//no estaria encontrando para que agregue esto, lo comento por si las dudas lo tengo que utilizar
     #tecnologias #inicio {
         background-image: url(../images/Imagenes/fondo-contacto.png);
         background-repeat: no-repeat;
@@ -431,9 +438,9 @@ footer .fa-linkedin-in {
     }
 */
 
-    #proyectos {
-        background-image: url(../images/Imagenes/fondo-proyectos.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
+  #proyectos {
+    background-image: url(../images/Imagenes/fondo-proyectos.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
